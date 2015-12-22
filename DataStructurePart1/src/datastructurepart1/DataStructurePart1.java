@@ -17,17 +17,47 @@ public class DataStructurePart1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       MultiDimensionalLoop mdl = new MultiDimensionalLoop();
-       mdl.multiDimentionalLoop();
+//       MultiDimensionalLoop mdl = new MultiDimensionalLoop();
+//       mdl.multiDimentionalLoop();
+        
+        OneDimensionalArray oda = new OneDimensionalArray();
+        oda.display();
+        
+        oda.insert(5, 2);
+        
+        oda.display();
+        
+        
+        
+        oda.insert(1, 0);
+        oda.insert(2, 1);
+        oda.insert(3, 3);
+        oda.insert(4, 4);
+        
+        oda.display();
+        
+        oda.insert(1, 0);
+        oda.display();
+        
+        oda.delete(0);
+        oda.display();
+        oda.delete(0);
+        oda.display();
         
         
         
         
     }
     
+  
+    static Scanner scan = new Scanner(System.in);
+    
+    
+    
+    
     static class MultiDimensionalLoop
     {
-        Scanner scan = new Scanner(System.in);
+        
         
         public  void multiDimentionalLoop(){
             double[][] subjectMarks = new double[4][3];
