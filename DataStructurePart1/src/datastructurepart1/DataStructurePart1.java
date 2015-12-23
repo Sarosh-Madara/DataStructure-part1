@@ -19,7 +19,7 @@ public class DataStructurePart1 {
     public static void main(String[] args) {
 //       MultiDimensionalLoop mdl = new MultiDimensionalLoop();
 //       mdl.multiDimentionalLoop();
-        
+       /* 
         OneDimensionalArray oda = new OneDimensionalArray();
         oda.display();
         
@@ -43,10 +43,36 @@ public class DataStructurePart1 {
         oda.display();
         oda.delete(0);
         oda.display();
+        */
         
         
+        // stack with array testing
+        /*
+        StackWithArray stack = new StackWithArray();
+        stack.top();
+        stack.push(4);
+        stack.top();
+        stack.push(5);
+        stack.top();
+        stack.push(6);
+        stack.top();
+        System.out.println("stack pop(): "+stack.pop());
+        stack.top();
         
+        System.out.println(stack.toString());
+        */
         
+        QueueWithArray queue = new QueueWithArray();
+        System.out.println(queue);
+        queue.enqueue(1);
+        System.out.println(queue);
+        queue.enqueue(2);
+        System.out.println(queue);
+        System.out.println(queue.dequeue());
+        System.out.println(queue);
+        System.out.println(queue.dequeue());
+        System.out.println(queue);
+                
     }
     
   
